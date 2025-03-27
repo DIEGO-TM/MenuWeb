@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Inclusión y Embebidos en HTML y CSS</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elementos de Inclusión y Embebidos</h1>
+        <p>Los elementos de inclusión y embebidos permiten integrar contenido externo en páginas HTML</p>
+    </header>
+
+    <section>
+        <h2>iframes</h2>
+        <p>Los iframes permiten incrustar otras páginas web dentro de tu página:</p>
+        <div class="ejemplo">
+            <h3>Ejemplo de iframe:</h3>
+            <pre class="codigo">
+&lt;iframe 
+    src="https://www.ejemplo.com"
+    width="600"
+    height="400"
+    frameborder="0"
+    allowfullscreen&gt;
+&lt;/iframe&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Embebiendo Contenido Multimedia</h2>
+        <div class="ejemplo">
+            <h3>Ejemplos de elementos embebidos:</h3>
+            <pre class="codigo">
+&lt;!-- Video de YouTube --&gt;
+&lt;iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    allowfullscreen&gt;
+&lt;/iframe&gt;
+
+&lt;!-- Mapa de Google Maps --&gt;
+&lt;iframe 
+    src="https://www.google.com/maps/embed?pb=..."
+    width="600" 
+    height="450" 
+    style="border:0;"
+    allowfullscreen&gt;
+&lt;/iframe&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Estilizando Elementos Embebidos con CSS</h2>
+        <div class="ejemplo">
+            <h3>CSS para elementos embebidos:</h3>
+            <pre class="codigo">
+iframe {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Contenedor responsivo para iframes */
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Elementos &lt;object&gt; y &lt;embed&gt;</h2>
+        <p>Para contenido multimedia y plugins:</p>
+        <div class="ejemplo">
+            <pre class="codigo">
+&lt;object 
+    data="archivo.pdf" 
+    type="application/pdf" 
+    width="600" 
+    height="400"&gt;
+    &lt;p&gt;Tu navegador no puede mostrar PDFs&lt;/p&gt;
+&lt;/object&gt;
+
+&lt;embed 
+    src="archivo.swf" 
+    type="application/x-shockwave-flash" 
+    width="300" 
+    height="200"&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Consideraciones de Seguridad</h2>
+        <ul>
+            <li>Usar el atributo <code>sandbox</code> para iframes</li>
+            <li>Implementar política de <code>Content Security Policy (CSP)</code></li>
+            <li>Verificar fuentes confiables antes de embeber contenido</li>
+            <li>Considerar la privacidad del usuario</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Los elementos de inclusión y embebidos son fundamentales para crear páginas web interactivas y ricas en contenido, pero deben usarse con precaución y considerando la seguridad.</p>
+    </footer>
+</body>
+</html>

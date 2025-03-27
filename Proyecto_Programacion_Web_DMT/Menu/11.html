@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta-información y Recursos en HTML y CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .ejemplo {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .codigo {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-left: 3px solid #2196F3;
+            overflow-x: auto;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meta-información y Recursos en HTML y CSS</h1>
+
+    <section>
+        <h2>Meta Tags Esenciales</h2>
+        <div class="ejemplo">
+            <h3>Meta tags básicos:</h3>
+            <pre class="codigo">
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Descripción de la página"&gt;
+&lt;meta name="keywords" content="palabras, clave, relevantes"&gt;
+&lt;meta name="author" content="Nombre del autor"&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Meta Tags para SEO</h2>
+        <div class="ejemplo">
+            <h3>Meta tags para redes sociales:</h3>
+            <pre class="codigo">
+&lt;!-- Open Graph (Facebook) --&gt;
+&lt;meta property="og:title" content="Título"&gt;
+&lt;meta property="og:description" content="Descripción"&gt;
+&lt;meta property="og:image" content="imagen.jpg"&gt;
+
+&lt;!-- Twitter Cards --&gt;
+&lt;meta name="twitter:card" content="summary"&gt;
+&lt;meta name="twitter:title" content="Título"&gt;
+&lt;meta name="twitter:description" content="Descripción"&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Recursos y Enlaces</h2>
+        <div class="ejemplo">
+            <h3>Enlaces a recursos externos:</h3>
+            <pre class="codigo">
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;link rel="icon" href="favicon.ico"&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preload" href="imagen.jpg" as="image"&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Optimización de Recursos</h2>
+        <div class="ejemplo">
+            <h3>CSS para optimización de recursos:</h3>
+            <pre class="codigo">
+/* Lazy loading de imágenes */
+img {
+    loading: lazy;
+}
+
+/* Fuentes optimizadas */
+@font-face {
+    font-family: 'MiFuente';
+    src: url('fuente.woff2') format('woff2'),
+         url('fuente.woff') format('woff');
+    font-display: swap;
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Buenas Prácticas</h2>
+        <ul>
+            <li>Usar meta tags relevantes para SEO</li>
+            <li>Optimizar recursos para mejor rendimiento</li>
+            <li>Implementar lazy loading cuando sea posible</li>
+            <li>Mantener las meta descripciones concisas y relevantes</li>
+            <li>Utilizar favicon y recursos de marca apropiados</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p>La meta-información y la gestión adecuada de recursos son fundamentales para el SEO y el rendimiento de un sitio web.</p>
+    </footer>
+</body>
+</html>

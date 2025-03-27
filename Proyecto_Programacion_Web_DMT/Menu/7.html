@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formularios y Entrada de Datos</h1>
+    </header>
+
+    <section>
+        <h2>Elementos Básicos de Formularios</h2>
+        <p>Los formularios HTML permiten recopilar datos del usuario. Aquí los elementos más comunes:</p>
+        <ul>
+            <li><strong>&lt;form&gt;</strong>: Contenedor del formulario</li>
+            <li><strong>&lt;input&gt;</strong>: Campo de entrada</li>
+            <li><strong>&lt;textarea&gt;</strong>: Área de texto multilínea</li>
+            <li><strong>&lt;select&gt;</strong>: Lista desplegable</li>
+            <li><strong>&lt;button&gt;</strong>: Botón</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ejemplo de Formulario</h2>
+        <div class="ejemplo-codigo">
+            <pre>
+&lt;form action="/procesar" method="post"&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre" required&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+    &lt;textarea id="mensaje" name="mensaje"&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tipos de Input</h2>
+        <p>El elemento input tiene varios tipos:</p>
+        <ul>
+            <li><strong>text</strong>: Texto simple</li>
+            <li><strong>password</strong>: Contraseña</li>
+            <li><strong>email</strong>: Correo electrónico</li>
+            <li><strong>number</strong>: Números</li>
+            <li><strong>date</strong>: Fecha</li>
+            <li><strong>checkbox</strong>: Casillas de verificación</li>
+            <li><strong>radio</strong>: Botones de opción</li>
+            <li><strong>file</strong>: Subida de archivos</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Estilizando Formularios con CSS</h2>
+        <div class="ejemplo-css">
+            <h3>Estilos básicos para formularios:</h3>
+            <pre>
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:focus, textarea:focus {
+    border-color: #2196F3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(33,150,243,0.3);
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Validación de Formularios</h2>
+        <p>HTML5 proporciona atributos para validación:</p>
+        <ul>
+            <li><strong>required</strong>: Campo obligatorio</li>
+            <li><strong>pattern</strong>: Patrón regex</li>
+            <li><strong>minlength/maxlength</strong>: Longitud del texto</li>
+            <li><strong>min/max</strong>: Valores numéricos</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Los formularios son esenciales para la interacción con el usuario. Un buen diseño y validación mejoran la experiencia del usuario y la calidad de los datos recopilados.</p>
+    </footer>
+</body>
+</html>

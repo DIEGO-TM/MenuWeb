@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Interactivos y Gráficos en HTML y CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .ejemplo {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .codigo {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-left: 3px solid #2196F3;
+            overflow-x: auto;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+
+        .boton-interactivo {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .boton-interactivo:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos Interactivos y Gráficos en HTML y CSS</h1>
+
+    <section>
+        <h2>Canvas HTML5</h2>
+        <p>El elemento canvas permite dibujar gráficos mediante JavaScript:</p>
+        <div class="ejemplo">
+            <h3>Ejemplo básico de Canvas:</h3>
+            <pre class="codigo">
+&lt;canvas id="miCanvas" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+const canvas = document.getElementById('miCanvas');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = 'blue';
+ctx.fillRect(10, 10, 100, 100);
+&lt;/script&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>SVG (Scalable Vector Graphics)</h2>
+        <p>SVG permite crear gráficos vectoriales escalables:</p>
+        <div class="ejemplo">
+            <h3>Ejemplo de SVG:</h3>
+            <pre class="codigo">
+&lt;svg width="200" height="200"&gt;
+    &lt;circle cx="100" cy="100" r="50" fill="red"/&gt;
+    &lt;rect x="50" y="50" width="100" height="100" 
+          fill="blue" opacity="0.5"/&gt;
+&lt;/svg&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Elementos Interactivos</h2>
+        <p>HTML5 incluye elementos nativamente interactivos:</p>
+        <ul>
+            <li><strong>&lt;details&gt;</strong> y <strong>&lt;summary&gt;</strong>: Para contenido expandible</li>
+            <li><strong>&lt;dialog&gt;</strong>: Para ventanas modales</li>
+            <li><strong>&lt;progress&gt;</strong>: Para barras de progreso</li>
+            <li><strong>&lt;meter&gt;</strong>: Para medidores</li>
+        </ul>
+        <div class="ejemplo">
+            <h3>Ejemplos:</h3>
+            <pre class="codigo">
+&lt;details&gt;
+    &lt;summary&gt;Ver más información&lt;/summary&gt;
+    &lt;p&gt;Contenido expandible aquí...&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+
+&lt;meter value="0.6"&gt;60%&lt;/meter&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Efectos Interactivos con CSS</h2>
+        <div class="ejemplo">
+            <h3>Ejemplos de efectos con CSS:</h3>
+            <pre class="codigo">
+.elemento-hover {
+    transition: all 0.3s ease;
+}
+
+.elemento-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.elemento-activo:active {
+    transform: scale(0.95);
+}
+
+@keyframes flotante {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+            </pre>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Los elementos interactivos y gráficos mejoran significativamente la experiencia del usuario y permiten crear interfaces más dinámicas y atractivas.</p>
+    </footer>
+</body>
+</html>

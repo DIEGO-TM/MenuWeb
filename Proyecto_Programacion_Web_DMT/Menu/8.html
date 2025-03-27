@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Semánticos y de Sección en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elementos Semánticos y de Sección en HTML</h1>
+    </header>
+
+    <section>
+        <h2>Elementos Semánticos Principales</h2>
+        <p>Los elementos semánticos ayudan a dar significado y estructura al contenido:</p>
+        <ul>
+            <li><strong>&lt;header&gt;</strong>: Encabezado de la página o sección</li>
+            <li><strong>&lt;nav&gt;</strong>: Navegación principal</li>
+            <li><strong>&lt;main&gt;</strong>: Contenido principal</li>
+            <li><strong>&lt;article&gt;</strong>: Contenido independiente y autocontenido</li>
+            <li><strong>&lt;section&gt;</strong>: Sección temática del contenido</li>
+            <li><strong>&lt;aside&gt;</strong>: Contenido relacionado indirectamente</li>
+            <li><strong>&lt;footer&gt;</strong>: Pie de página o sección</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Estructura Semántica Básica</h2>
+        <div class="ejemplo-codigo">
+            <h3>Ejemplo de estructura:</h3>
+            <pre>
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;!-- Navegación --&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;section&gt;
+                &lt;!-- Contenido --&gt;
+            &lt;/section&gt;
+        &lt;/article&gt;
+        
+        &lt;aside&gt;
+            &lt;!-- Contenido relacionado --&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;!-- Pie de página --&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Estilizando Elementos Semánticos</h2>
+        <div class="ejemplo-css">
+            <h3>CSS común para elementos semánticos:</h3>
+            <pre>
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+article {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+aside {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 3px solid #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Beneficios del HTML Semántico</h2>
+        <ul>
+            <li>Mejor accesibilidad para lectores de pantalla</li>
+            <li>Código más mantenible y legible</li>
+            <li>Mejor SEO (Optimización para motores de búsqueda)</li>
+            <li>Estructura clara y significativa</li>
+            <li>Facilita el desarrollo responsive</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p>El HTML semántico es fundamental para crear sitios web modernos, accesibles y bien estructurados.</p>
+    </footer>
+</body>
+</html>

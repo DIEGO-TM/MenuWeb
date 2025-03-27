@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces y Navegación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Enlaces y Navegación en HTML</h1>
+    </header>
+
+    <section>
+        <h2>Enlaces HTML Básicos</h2>
+        <p>La etiqueta básica para crear enlaces es <strong>&lt;a&gt;</strong>:</p>
+        <ul>
+            <li><strong>href</strong>: URL o ruta del destino</li>
+            <li><strong>target</strong>: Dónde abrir el enlace (_blank, _self, etc.)</li>
+            <li><strong>title</strong>: Texto descriptivo al pasar el mouse</li>
+        </ul>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <pre>
+&lt;a href="https://www.ejemplo.com" target="_blank"&gt;
+    Visitar sitio web
+&lt;/a&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tipos de Enlaces</h2>
+        <ul>
+            <li><strong>Enlaces absolutos:</strong> URLs completas
+                <pre>&lt;a href="https://www.ejemplo.com"&gt;Sitio web&lt;/a&gt;</pre>
+            </li>
+            <li><strong>Enlaces relativos:</strong> Rutas dentro del sitio
+                <pre>&lt;a href="paginas/contacto.html"&gt;Contacto&lt;/a&gt;</pre>
+            </li>
+            <li><strong>Enlaces de correo:</strong> Para abrir cliente de correo
+                <pre>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar email&lt;/a&gt;</pre>
+            </li>
+            <li><strong>Enlaces de teléfono:</strong> Para dispositivos móviles
+                <pre>&lt;a href="tel:+123456789"&gt;Llamar&lt;/a&gt;</pre>
+            </li>
+            <li><strong>Enlaces internos:</strong> A secciones de la misma página
+                <pre>&lt;a href="#seccion"&gt;Ir a sección&lt;/a&gt;</pre>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Estilizando Enlaces con CSS</h2>
+        <div class="ejemplo-css">
+            <h3>Estados de los enlaces:</h3>
+            <pre>
+/* Enlace no visitado */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Enlace visitado */
+a:visited {
+    color: purple;
+}
+
+/* Al pasar el mouse */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Al hacer clic */
+a:active {
+    color: orange;
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Navegación Estructurada</h2>
+        <p>Elementos semánticos para navegación:</p>
+        <ul>
+            <li><strong>&lt;nav&gt;</strong>: Sección de navegación principal</li>
+            <li><strong>&lt;menu&gt;</strong>: Lista de comandos o enlaces</li>
+            <li><strong>&lt;breadcrumb&gt;</strong>: Navegación de migas de pan</li>
+        </ul>
+        <div class="ejemplo">
+            <h3>Ejemplo de menú de navegación:</h3>
+            <pre>
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="inicio.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="productos.html"&gt;Productos&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </pre>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Los enlaces son fundamentales para la navegación web y la interconexión de contenidos. Un buen diseño de navegación mejora la experiencia del usuario.</p>
+    </footer>
+</body>
+</html>

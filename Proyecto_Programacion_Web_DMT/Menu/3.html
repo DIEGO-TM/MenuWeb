@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Listas en HTML</h1>
+    </header>
+
+    <section>
+        <h2>Tipos de Listas</h2>
+        <p>HTML ofrece tres tipos principales de listas:</p>
+        <ul>
+            <li><strong>Listas Ordenadas</strong> (&lt;ol&gt;)</li>
+            <li><strong>Listas No Ordenadas</strong> (&lt;ul&gt;)</li>
+            <li><strong>Listas de Definición</strong> (&lt;dl&gt;)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Lista Ordenada (ol)</h2>
+        <p>Ejemplo de lista ordenada:</p>
+        <ol>
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+        </ol>
+
+        <h3>Atributos de ol:</h3>
+        <ul>
+            <li><strong>type</strong>: "1", "A", "a", "I", "i"</li>
+            <li><strong>start</strong>: número inicial</li>
+            <li><strong>reversed</strong>: orden inverso</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Lista No Ordenada (ul)</h2>
+        <p>Ejemplo de lista no ordenada:</p>
+        <ul>
+            <li>Elemento con viñeta</li>
+            <li>Otro elemento</li>
+            <li>Un elemento más</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Lista de Definición (dl)</h2>
+        <p>Ejemplo de lista de definición:</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - Lenguaje de marcado para crear páginas web</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - Hojas de estilo en cascada</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Estilizando Listas con CSS</h2>
+        <div class="ejemplo-css">
+            <h3>Propiedades CSS comunes para listas:</h3>
+            <ul>
+                <li><strong>list-style-type</strong>: Define el tipo de marcador</li>
+                <li><strong>list-style-image</strong>: Usa una imagen como marcador</li>
+                <li><strong>list-style-position</strong>: Posición del marcador</li>
+                <li><strong>margin</strong> y <strong>padding</strong>: Espaciado</li>
+            </ul>
+        </div>
+
+        <div class="ejemplo-codigo">
+            <h3>Ejemplo de CSS para listas:</h3>
+            <pre>
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: upper-roman;
+    padding-left: 30px;
+}
+
+dl {
+    margin: 15px 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 30px;
+}
+            </pre>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Las listas son elementos fundamentales en HTML para organizar y estructurar contenido de manera clara y accesible.</p>
+    </footer>
+</body>
+</html>
+

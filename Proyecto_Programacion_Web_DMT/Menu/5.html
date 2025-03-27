@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes y Multimedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Imágenes y Multimedia en HTML</h1>
+    </header>
+
+    <section>
+        <h2>Imágenes</h2>
+        <p>La etiqueta <strong>&lt;img&gt;</strong> se utiliza para insertar imágenes:</p>
+        <div class="ejemplo-codigo">
+            <pre>
+&lt;img src="ruta/imagen.jpg" alt="Descripción de la imagen" width="300" height="200"&gt;
+            </pre>
+        </div>
+        
+        <h3>Atributos importantes:</h3>
+        <ul>
+            <li><strong>src</strong>: Ruta de la imagen</li>
+            <li><strong>alt</strong>: Texto alternativo</li>
+            <li><strong>width</strong>: Ancho</li>
+            <li><strong>height</strong>: Alto</li>
+            <li><strong>loading</strong>: lazy/eager</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Formatos de Imagen Soportados</h2>
+        <ul>
+            <li><strong>JPEG/JPG</strong>: Para fotografías</li>
+            <li><strong>PNG</strong>: Para imágenes con transparencia</li>
+            <li><strong>GIF</strong>: Para animaciones simples</li>
+            <li><strong>SVG</strong>: Para gráficos vectoriales</li>
+            <li><strong>WebP</strong>: Formato moderno optimizado</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Audio en HTML</h2>
+        <p>La etiqueta <strong>&lt;audio&gt;</strong> permite reproducir archivos de audio:</p>
+        <div class="ejemplo-codigo">
+            <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Video en HTML</h2>
+        <p>La etiqueta <strong>&lt;video&gt;</strong> permite reproducir videos:</p>
+        <div class="ejemplo-codigo">
+            <pre>
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    Tu navegador no soporta el elemento de video.
+&lt;/video&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Estilizando Multimedia con CSS</h2>
+        <div class="ejemplo-css">
+            <h3>Ejemplos de CSS para multimedia:</h3>
+            <pre>
+/* Estilizando imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Estilizando video */
+video {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #333;
+}
+
+/* Estilizando audio */
+audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Efecto hover en imágenes */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contenido Responsivo</h2>
+        <p>El atributo <strong>srcset</strong> permite especificar diferentes imágenes para diferentes tamaños de pantalla:</p>
+        <div class="ejemplo-codigo">
+            <pre>
+&lt;img srcset="imagen-pequeña.jpg 300w,
+             imagen-mediana.jpg 600w,
+             imagen-grande.jpg 900w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 640px) 580px,
+            800px"
+     src="imagen-fallback.jpg" 
+     alt="Imagen responsiva"&gt;
+            </pre>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>El contenido multimedia enriquece la experiencia del usuario en la web. Es importante optimizar estos elementos para mantener un buen rendimiento del sitio.</p>
+    </footer>
+</body>
+</html>

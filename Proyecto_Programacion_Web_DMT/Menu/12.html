@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Obsoletas en HTML5</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Etiquetas Obsoletas en HTML5</h1>
+        <p>Elementos y atributos que ya no se recomiendan usar en HTML5</p>
+    </header>
+
+    <section>
+        <h2>Etiquetas HTML Obsoletas</h2>
+        <div class="ejemplo">
+            <h3>Elementos que no deben usarse:</h3>
+            <pre class="codigo">
+&lt;!-- No usar estas etiquetas --&gt;
+&lt;center&gt;Texto centrado&lt;/center&gt;
+&lt;font face="Arial" size="3"&gt;Texto con fuente&lt;/font&gt;
+&lt;basefont&gt;
+&lt;big&gt;Texto grande&lt;/big&gt;
+&lt;strike&gt;Texto tachado&lt;/strike&gt;
+&lt;tt&gt;Texto monoespaciado&lt;/tt&gt;
+&lt;frame&gt;
+&lt;frameset&gt;
+&lt;noframes&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Alternativas Modernas</h2>
+        <div class="ejemplo">
+            <h3>Soluciones con CSS:</h3>
+            <pre class="codigo">
+/* En lugar de &lt;center&gt; */
+.texto-centrado {
+    text-align: center;
+}
+
+/* En lugar de &lt;font&gt; */
+.texto-personalizado {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* En lugar de &lt;big&gt; */
+.texto-grande {
+    font-size: 1.2em;
+}
+
+/* En lugar de &lt;strike&gt; */
+.texto-tachado {
+    text-decoration: line-through;
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Atributos Obsoletos</h2>
+        <ul>
+            <li><strong>align</strong> (usar CSS text-align o flexbox)</li>
+            <li><strong>bgcolor</strong> (usar CSS background-color)</li>
+            <li><strong>border</strong> en imágenes (usar CSS border)</li>
+            <li><strong>cellpadding/cellspacing</strong> en tablas (usar CSS padding)</li>
+            <li><strong>width/height</strong> como atributos (usar CSS)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Buenas Prácticas</h2>
+        <ul>
+            <li>Usar CSS para estilos y diseño</li>
+            <li>Mantener la semántica HTML5</li>
+            <li>Separar contenido de presentación</li>
+            <li>Utilizar elementos semánticos modernos</li>
+            <li>Validar el código HTML regularmente</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Es importante mantenerse actualizado con los estándares web modernos y evitar el uso de elementos obsoletos para garantizar la compatibilidad y el mantenimiento del código.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML y CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tablas en HTML y CSS</h1>
+    </header>
+
+    <section>
+        <h2>Estructura Básica de una Tabla</h2>
+        <p>Las tablas en HTML se construyen usando las siguientes etiquetas principales:</p>
+        <ul>
+            <li><strong>&lt;table&gt;</strong>: Define la tabla</li>
+            <li><strong>&lt;tr&gt;</strong>: Define una fila</li>
+            <li><strong>&lt;th&gt;</strong>: Define una celda de encabezado</li>
+            <li><strong>&lt;td&gt;</strong>: Define una celda de datos</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ejemplo de Tabla Básica</h2>
+        <div class="ejemplo-codigo">
+            <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dato 1&lt;/td&gt;
+        &lt;td&gt;Dato 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Elementos Adicionales de Tabla</h2>
+        <ul>
+            <li><strong>&lt;thead&gt;</strong>: Agrupa el contenido del encabezado</li>
+            <li><strong>&lt;tbody&gt;</strong>: Agrupa el contenido principal</li>
+            <li><strong>&lt;tfoot&gt;</strong>: Agrupa el contenido del pie</li>
+            <li><strong>&lt;caption&gt;</strong>: Define un título para la tabla</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Atributos de Tabla</h2>
+        <ul>
+            <li><strong>colspan</strong>: Combina columnas</li>
+            <li><strong>rowspan</strong>: Combina filas</li>
+            <li><strong>border</strong>: Define el borde (aunque se recomienda CSS)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Estilizando Tablas con CSS</h2>
+        <div class="ejemplo-css">
+            <h3>Propiedades CSS comunes para tablas:</h3>
+            <pre>
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tabla Responsiva</h2>
+        <p>Para hacer una tabla responsiva, puedes envolverla en un contenedor con scroll horizontal:</p>
+        <pre>
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+}
+        </pre>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Las tablas son herramientas poderosas para mostrar datos tabulares. Sin embargo, no se recomienda usarlas para el diseño de la página.</p>
+    </footer>
+</body>
+</html>
